@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "4Pn3oZR1sV8=",
+  "success": true,
+  "projectFilePath": "C:\\Aishwarya\\Project 2024\\POSaBIT\\Project\\My App\\Hello\\Hello.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nuget.hypur.com/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
