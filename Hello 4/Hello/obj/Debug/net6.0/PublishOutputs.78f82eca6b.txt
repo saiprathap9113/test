@@ -1,0 +1,7 @@
+C:\Publish\Hello\Hello.exe
+C:\Publish\Hello\appsettings.Development.json
+C:\Publish\Hello\appsettings.json
+C:\Publish\Hello\Hello.dll
+C:\Publish\Hello\Hello.deps.json
+C:\Publish\Hello\Hello.runtimeconfig.json
+C:\Publish\Hello\Hello.pdb

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Publish\Hello</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include=".ebextensions/01-web-setup.config">
+      <publishTime>01/09/2025 14:35:27</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
