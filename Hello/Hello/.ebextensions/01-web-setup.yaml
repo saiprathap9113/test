@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 files:
 /opt/elasticbeanstalk/hooks/appdeploy/post/01-create-web-directories.bat:
@@ -33,3 +34,55 @@ appcmd add app /site.name:"Default Web Site" /path:/ /physicalPath:"C:\inetpub\w
 option_settings:
 aws:elasticbeanstalk:application:environment:
 ASPNETCORE_ENVIRONMENT: TEST
+=======
+files:
+  /opt/elasticbeanstalk/hooks/appdeploy/post/01-create-web-directories.bat:
+    mode: "000755"
+    content: |
+      @echo off
+
+      REM Create the web root and application directories
+      echo Starting directory creation >> C:\ebdeploy.log
+
+      IF NOT EXIST "C:\inetpub\wwwroot" (
+          mkdir "C:\inetpub\wwwroot"
+          echo Created directory: C:\inetpub\wwwroot >> C:\ebdeploy.log
+      ) ELSE (
+          echo Directory already exists: C:\inetpub\wwwroot >> C:\ebdeploy.log
+      )
+
+      IF NOT EXIST "C:\inetpub\Hello" (
+          mkdir "C:\inetpub\Hello"
+          echo Created directory: C:\inetpub\Hello >> C:\ebdeploy.log
+      ) ELSE (
+          echo Directory already exists: C:\inetpub\Hello >> C:\ebdeploy.log
+      )
+
+      echo Directory creation complete >> C:\ebdeploy.log
+
+commands:
+  01_configure_web_applications:
+    command: >
+      @echo off
+      echo Configuring the Hello application... >> C:\ebdeploy.log
+
+      REM Set up the Hello application
+      appcmd list app /site.name:"Default Web Site" /path:/ >> C:\ebdeploy.log
+      IF %ERRORLEVEL% NEQ 0 (
+          appcmd add app /site.name:"Default Web Site" /path:/ /physicalPath:"C:\inetpub\wwwroot" >> C:\ebdeploy.log
+          IF %ERRORLEVEL% NEQ 0 (
+              echo "Failed to add app using appcmd" >> C:\ebdeploy.log
+              exit /b 1
+          ) ELSE (
+              echo "Hello application added successfully" >> C:\ebdeploy.log
+          )
+      ) ELSE (
+          echo "Hello application already exists" >> C:\ebdeploy.log
+      )
+
+      echo Application configuration complete >> C:\ebdeploy.log
+
+option_settings:
+  aws:elasticbeanstalk:application:environment:
+    ASPNETCORE_ENVIRONMENT: TEST
+>>>>>>> 61ca7ca8f9aa1cd452846c61ec721eb0867237d9
