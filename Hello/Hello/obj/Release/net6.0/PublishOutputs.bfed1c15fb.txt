@@ -1,0 +1,9 @@
+C:\Aishwarya\Project 2024\POSaBIT\Project\My App\Hello\obj\Release\net6.0\PubTmp\Out\Hello.exe
+C:\Aishwarya\Project 2024\POSaBIT\Project\My App\Hello\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Aishwarya\Project 2024\POSaBIT\Project\My App\Hello\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Aishwarya\Project 2024\POSaBIT\Project\My App\Hello\obj\Release\net6.0\PubTmp\Out\aws-beanstalk-tools-defaults.json
+C:\Aishwarya\Project 2024\POSaBIT\Project\My App\Hello\obj\Release\net6.0\PubTmp\Out\.ebextensions\01-web-setup.config
+C:\Aishwarya\Project 2024\POSaBIT\Project\My App\Hello\obj\Release\net6.0\PubTmp\Out\Hello.dll
+C:\Aishwarya\Project 2024\POSaBIT\Project\My App\Hello\obj\Release\net6.0\PubTmp\Out\Hello.deps.json
+C:\Aishwarya\Project 2024\POSaBIT\Project\My App\Hello\obj\Release\net6.0\PubTmp\Out\Hello.runtimeconfig.json
+C:\Aishwarya\Project 2024\POSaBIT\Project\My App\Hello\obj\Release\net6.0\PubTmp\Out\Hello.pdb
